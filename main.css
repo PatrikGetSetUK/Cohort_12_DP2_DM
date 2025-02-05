@@ -1,0 +1,25 @@
+/* CSS code CTRL / */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    color: #064be0;
+}
+
+p {
+    font-size: 16px;
+    font-weight: normal;
+    text-decoration: none;
+    color: #363636;
+}
+
+.highlight {
+    font-size: 20px;
+    font-weight: bold;
+    color: orangered;
+}

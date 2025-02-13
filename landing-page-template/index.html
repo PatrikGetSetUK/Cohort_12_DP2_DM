@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Landing Page</title>
+    <!-- SEO Meta tags -->
+    <meta name="description" content="Description of your webpage" />
+    <meta name="keywords" content="Keywords for your webpage" />
+    <meta name="author" content="Your Name" />
+
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Your Webpage Title" />
+    <meta property="og:description" content="Description of your webpage" />
+    <meta property="og:image" content="URL to your webpage's image" />
+    <meta property="og:url" content="URL of your webpage" />
+    
+    <meta name="twitter:title" content="Your Webpage Title" />
+    <meta name="twitter:description" content="Description of your webpage" />
+    <meta name="twitter:image" content="URL to your webpage's image" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- CSS external link -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">LOGO</div>
+            <div class="menu">
+                <a href="./index.html">Home</a>
+                <a href="#section1">About</a>
+                <a href="#section2">Services</a>
+                <a href="#section3">Contact</a>
+            </div>
+            <div class="burger-menu" onclick="toggleMenu()">
+                &#9776;
+            </div>
+        </nav>
+        <div id="mobile-menu" class="mobile-menu">
+            <a href="./index.html" onclick="closeMenu()">Home</a>
+            <a href="#section1" onclick="closeMenu()">About</a>
+            <a href="#section2" onclick="closeMenu()">Services</a>
+            <a href="#section3" onclick="closeMenu()">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <img src="hero-image.jpg" alt="Hero Image" class="hero-image">
+        <div class="hero-text">
+            <h1>Your Tagline Here</h1>
+            <button class="cta-button">Buy Tickets</button>
+        </div>
+    </section>
+
+    <!-- Sections with Anchor Links -->
+    <section id="section1">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </section>
+
+    <section id="section2">
+        <h2>Services</h2>
+        <div class="web-cards">
+            <div class="card small-card">
+
+                <img src="./images/music-band-01.webp" alt="Card Image" class="card-image">
+
+                <div class="card-content">
+                    <h2 class="card-title">Card Title</h2>
+                    <p class="card-description">This is a short description of the card. It provides some details to
+                        engage the
+                        user.</p>
+                    <button class="cta-button">Learn More</button>
+                </div>
+
+            </div>
+
+            <div class="card large-card">Card 2 (Bigger)</div>
+            <div class="card small-card">Card 3</div>
+        </div>
+    </section>
+
+    <section id="section3">
+        <h2>Contact</h2>
+        <p>Reach out to us for more information.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="social-media">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Cookie Popup -->
+    <div id="cookie-popup" class="cookie-popup">
+        <p>This website uses cookies to ensure you get the best experience. <a href="#">Learn More</a></p>
+        <button onclick="acceptCookies()">Accept</button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
